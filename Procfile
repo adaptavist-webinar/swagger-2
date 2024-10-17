@@ -1,1 +1,1 @@
-web: mvn package jetty:run -Djetty.http.port=$PORT
+web: java $JAVA_OPTS --port $PORT target/*.war
